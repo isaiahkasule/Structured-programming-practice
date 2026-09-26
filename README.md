@@ -78,3 +78,23 @@ You have not attained the required standard for promotion.
 
 
 
+
+
+\## Exercise 4 – Basic loop
+
+Source: Deitel \& Deitel, C How to Program, 9th Edition, Chapter 3, Exercise 3.5
+
+What the program does: The program prints out numbers from 100 to 200 using a for loop on a single line, whereby the numbers are spaced from the first to the last.
+
+Concepts used: initialisation, for loop, printf statement(printf(“”);, escape sequence(\\n for a new line) and string literals, format specifiers(%d for integers), i++ incrementor, a condition(i <= 200)
+
+How it works: The loop will start with an initial value, which is 100. The body(the printf statement) will run when the condition is true, that is (i <=200). It'll also not run when the condition is not met. The loop will run once for each value of i from 100 to 200.
+
+Example run:
+
+100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200
+
+
+
+
+
