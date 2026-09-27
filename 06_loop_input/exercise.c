@@ -15,6 +15,6 @@ int main()
 
     average = sum / 4;
 
-    printf("\nThe average of the scores is %.2f!\n", average);
+    printf("\nThe average of the scores is %.2f.\n", average);
     return 0;
 }
