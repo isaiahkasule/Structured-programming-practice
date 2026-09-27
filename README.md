@@ -4,13 +4,13 @@ This contains eight C programs demonstrating core structured programming concept
 
 
 
-\## Exercise 1 – Basic Output
+## Exercise 1 – Basic Output
 
 Source: Deitel \& Deitel, C How to Program, 9th Edition, Chapter 2, Exercise 2.9(a).
 
 What the program does: The program prints out a fixed decorative bordered box using extended ASCII characters.
 
-Concepts used: printf statements(printf(“”);, escape sequences (\\xNN hex character codes) and string literals
+Concepts used: printf statements(printf(“”));, escape sequences (\xNN hex character codes) and string literals
 
 How it works: row 1 has a left top corner followed by horizontal lines and then a top right corner. Rows 2 to 5 have vertical lines at the end with the shaded texture in between. Row 6 has a bottom-left corner followed by horizontal lines and finally a bottom-right corner
 
@@ -19,74 +19,62 @@ Example run:
 This is a block with a shaded texture.
 
 ╔════╗
-
 ║▓▓▓▓║
-
 ║▓▓▓▓║
-
 ║▓▓▓▓║
-
 ║▓▓▓▓║
-
 ╚════╝
 
 
 
-\## Exercise 2 – Input-Process-Output
+## Exercise 2 – Input-Process-Output
 
 Source: Deitel \& Deitel, C How to Program, 9th Edition, Chapter 2, Exercise 2.28
 
 What the program does: The program prompts a user to enter their monthly income in UGX and reads the input from the user. Then it makes calculations using the 50%, 30%, and 20% rule to get the percentages for needs, wants, and savings, respectively. After getting the values, it prints out the amount for needs, wants, and savings.
 
-Concepts used: printf statements(printf("");, scanf statement(scannf("")), escape sequences (\\n for a new line) and string literals. Arithmetic symbols like \*(product), format specifiers(%f for floats) and \& to store the read value into its variable
+Concepts used: printf statements(printf(""));, scanf statement(scannf("")), escape sequences (\n for a new line) and string literals. Arithmetic symbols like *(product), format specifiers(%f for floats) and \& to store the read value into its variable
 
-How it works: It’ll ask for a value from the user, read it, and store it in its variable. Then it'll compute the amount for needs by getting the product of income by the percentage of needs(50% or 0.50), which is income \* 0.50. The same goes for wants and savings, and all the values are stored in their variables. The program finally prints out the values to the user. 
+How it works: It’ll ask for a value from the user, read it, and store it in its variable. Then it'll compute the amount for needs by getting the product of income by the percentage of needs(50% or 0.50), which is income * 0.50. The same goes for wants and savings, and all the values are stored in their variables. The program finally prints out the values to the user. 
 
 Example run: 
 
 Enter monthly income (UGX): 1000000
 
 Needs: UGX 500000.00
-
 Wants: UGX 300000.00
-
 Savings: UGX 200000.00
 
 
-
-\## Exercise 3 – Decisions
+## Exercise 3 – Decisions
 
 Source: Deitel \& Deitel, C How to Program, 9th Edition, Chapter 2, Exercise 2.18
 
 What the program does: The program prompts the user to enter their average score and reads the input. Then it checks if the score is greater than or equal to 50; if true, then it prints out a statement to the user informing them they are promoted. If not true, it prints a statement telling them they aren't promoted.
 
-Concepts used: if/else statements, printf statements(printf("");, scanf statement(scanf("")), escape sequences (\\n for a new line) and string literals, format specifiers(%f for floats) and \& to store the read value into its variable
+Concepts used: if/else statements, printf statements(printf(""));, scanf statement(scanf("")), escape sequences (\n for a new line) and string literals, format specifiers(%f for floats) and \& to store the read value into its variable
 
 How it works: It’ll ask for a value from the user, read it, and store it in its variable. Then it'll check if the value is greater than or equal to 50; if yes, it'll print out to the user that they have attained the required standard and are promoted to the next class. If false, it'll print out the other printf statement telling them they didn’t attain the required standard and are not promoted. 
 
 Example run: 
 
 Enter average score (%): 60
-
 You've attained the required standard and are promoted to the next class.
 
-
-
 Enter average score (%): 45.9
-
 You have not attained the required standard for promotion.
 
 
 
 
 
-\## Exercise 4 – Basic loop
+## Exercise 4 – Basic loop
 
 Source: Deitel \& Deitel, C How to Program, 9th Edition, Chapter 3, Exercise 3.5
 
 What the program does: The program prints out numbers from 100 to 200 using a for loop on a single line, whereby the numbers are spaced from the first to the last.
 
-Concepts used: initialisation, for loop, printf statement(printf(“”);, escape sequence(\\n for a new line) and string literals, format specifiers(%d for integers), i++ incrementor, a condition(i <= 200)
+Concepts used: initialisation, for loop, printf statement(printf(“”));, escape sequence(\n for a new line) and string literals, format specifiers(%d for integers), i++ incrementor, a condition(i <= 200)
 
 How it works: The loop will start with an initial value, which is 100. The body(the printf statement) will run when the condition is true, that is (i <=200). It'll also not run when the condition is not met. The loop will run once for each value of i from 100 to 200.
 
@@ -98,41 +86,32 @@ Example run:
 
 
 
-\## Exercise 5 – Loop calculation
+## Exercise 5 – Loop calculation
 
 Source: Deitel \& Deitel, C How to Program, 9th Edition, Chapter 3, Exercise 3.12
 
 What the program does: The program uses a for loop to accumulate the sum of the first five squares. In each loop iteration, it calculates the square, prints it, and updates the total until the condition is no longer true. Then, finally, it will print out the sum of the numbers.
 
-Concepts used: initialization, for loop, printf statement(printf(“”);, escape sequence(\\n for a new line) and string literals, format specifiers(%d for integers), i++ incrementor, a condition(i <= 5), total addition(total +=)
+Concepts used: initialization, for loop, printf statement(printf(“”));, escape sequence(\n for a new line) and string literals, format specifiers(%d for integers), i++ incrementor, a condition(i <= 5), total addition(total +=)
 
-How it works: The loop will start with an initial value, which is 1. The body will run when the condition is true, that is (i <=5). It'll also not run when the condition is not met. The loop will run once for each value of i from 1 to 5. For i = 1, it'll calculate the square using the formula i\*i, print out the value of the square, and add that value to the total, which was initialized outside the loop. The value of total will always be zero at each iteration, and the old value will be erased if it is declared inside the loop.
+How it works: The loop will start with an initial value, which is 1. The body will run when the condition is true, that is (i <=5). It'll also not run when the condition is not met. The loop will run once for each value of i from 1 to 5. For i = 1, it'll calculate the square using the formula i*i, print out the value of the square, and add that value to the total, which was initialized outside the loop. The value of total will always be zero at each iteration, and the old value will be erased if it is declared inside the loop.
 
 Example run:
 
 Square1: 1
-
 Square2: 4
-
 Square3: 9
-
 Square4: 16
-
 Square5: 25
-
 The sum of the first five squares is 55
 
-
-
-
-
-\## Exercise 6 – Loop Input
+## Exercise 6 – Loop Input
 
 Source: Deitel \& Deitel, C How to Program, 9th Edition, Chapter 3, Exercise 3.14(b)
 
 What the program does: The program uses a for loop to prompt a user to enter their scores, prints out each score, updated the sum and at the end of the loop. It calculates the average of the sum of the scores. Then finally, it will print out the average of the numbers. 
 
-Concepts used: initialization, for loop, printf statement(printf(“”);, scanf statement(scanf(“”)),  escape sequence(\\n for a new line) and string literals, format specifiers(%f for floats), i++ incrementor, a condition(i <= 4), sum addition(sum +=)
+Concepts used: initialization, for loop, printf statement(printf(“”));, scanf statement(scanf(“”)),  escape sequence(\n for a new line) and string literals, format specifiers(%f for floats), i++ incrementor, a condition(i <= 4), sum addition(sum +=)
 
 How it works: The loop will start with an initial value, which is 1. The body will run when the condition is true, that is (i <=4). It'll also not run when the condition is not met. The loop will run once for each value of i from 1 to 4. for i = 1, it'll prompt the user to enter their 1st score, it'll read it and store it in its variable. Then it'll print it out the score and add that value to the sum which was initialized outside the loop. The value of sum will always be zero at each iteration and the old value will be erased if it is declared inside the loop
 
@@ -141,34 +120,23 @@ Note: if a user inputs a character(char), the program will produce a continuous 
 Example run: 
 
 Enter score1: 65
-
 Score1: 65.00
-
 Enter score2: 87
-
 Score2: 87.00
-
 Enter score3: 87
-
 Score3: 87.00
-
 Enter score4: 25
-
 Score4: 25.00
 
 The average of the scores is 66.00.
 
-
-
-
-
-\## Exercise 7 – Loop Decision
+## Exercise 7 – Loop Decision
 
 Source: Deitel \& Deitel, C How to Program, 9th Edition, Chapter 4 Section 4.12, Exercise 3.37
 
 What the program does: The program uses a for loop to prompt a user to enter a mark out of 40; it reads it and stores it. The mark is then used in the if/else if/else to decide whether an invalid mark was input and whether the student passed or failed. 
 
-Concepts used: initialization, for loop, printf statement(printf(“”);, scanf statement(scanf(“”)),  escape sequence(\\n for a new line) and string literals, format specifiers(%f for floats), i++ incrementor, a condition(i <= 6), if/else if/else.
+Concepts used: initialization, for loop, printf statement(printf(""));, scanf statement(scanf("")),  escape sequence(\n for a new line) and string literals, format specifiers(%f for floats), i++ incrementor, a condition(i <= 6), if/else if/else.
 
 How it works: The loop will start with an initial value, which is 1. The body will run when the condition is true, that is (i <=6). It also won’t run when the condition is not met. The loop will run once for each value of i from 1 to 6. For i = 1, it’ll prompt the user to enter the 1st mark; it’ll read it and store it in its variable. Then the entered mark will be evaluated in the if/else if/else statement, where the first check is if the mark is within the range, i.e., (mark <0 || mark > 40). If the condition is false, it’ll proceed to the next condition, and if true, it’ll print out to the user an error message that they input an invalid mark. Then to the condition(mark >= 24); if true, it’ll print out that the student passed and if false, the last else statement will run.
 
@@ -177,28 +145,58 @@ Note: if a user inputs a character(char), the program will produce a continuous 
 Example run: 
 
 Enter mark (/40): 20
-
 Student 1 failed
-
 Enter mark (/40): 65
-
 Invalid mark for Student 2
-
 Enter mark (/40): 40
-
 Student 3 passed
-
 Enter mark (/40): 23.5
-
 Student 4 failed
-
 Enter mark (/40): 24.0
-
 Student 5 passed
-
 Enter mark (/40): 45
-
 Invalid mark for Student 6
 
+## Exercise 8 – Interactive Program
+Source: Deitel & Deitel, C How to Program, 9th Edition. Self-designed program, not based on a single numbered exercise, but demonstrates menu/sentinel-controlled iteration, a broader Chapter 3 concept.
 
+What the program does: The program displays a shopping menu (4 clothing items plus an Exit option). After the user selects an item, it asks for a quantity, calculates the subtotal, and adds it to a running total. This repeats: the menu keeps reappearing until the user chooses Exit, at which point an 8% discount is applied if the total is 100,000 or more, and the final amount payable is printed.
+
+Concepts used: while loop (menu-controlled iteration), switch statement, if/else statement, accumulator (total +=), format specifiers (%d for integers, %f for floats), printf and scanf statements, string literals.
+
+How it works: The while loop keeps running as long as choice is not 5, showing the menu each time and reading the user's selection. A switch statement directs the program to the matching case (1–4) for the item chosen. Inside each case, the program asks for a quantity and checks it's greater than 0,if not, it prints an error and skips the purchase. if valid, it calculates the subtotal (price × quantity), adds it to the running total, and confirms the addition. Case 5 (Exit) does nothing itself since it's an empty case, since the loop's own condition (choice != 5 becoming false) is what actually ends the loop on the next check. Any other number falls into default, which prints an invalid-choice message. Once the loop ends (Exit chosen), the program checks the final total: if it's 100,000 or more, it calculates and prints an 8% discount before showing the discounted total; otherwise it prints the total as-is.
+
+Note: If a user inputs a character instead of a number, the program will loop continuously, since scanf fails to convert it and keeps re-reading the same invalid input.
+Example run:
+1. Shirts - UGX 20000
+2. Shorts - UGX 15000
+3. Trousers - UGX 25000
+4. Shoes - UGX 50000
+5. Exit
+Enter choice: 2
+Enter quantity: 5
+Added 5 short(s), subtotal UGX 75000.00
+1. Shirts - UGX 20000
+2. Shorts - UGX 15000
+3. Trousers - UGX 25000
+4. Shoes - UGX 50000
+5. Exit
+Enter choice: 4
+Enter quantity: 1
+Added 1 shoes, subtotal UGX 50000.00
+1. Shirts - UGX 20000
+2. Shorts - UGX 15000
+3. Trousers - UGX 25000
+4. Shoes - UGX 50000
+5. Exit
+Enter choice: 6
+Invalid choice
+1. Shirts - UGX 20000
+2. Shorts - UGX 15000
+3. Trousers - UGX 25000
+4. Shoes - UGX 50000
+5. Exit
+Enter choice: 5
+Discount: 10000.00
+Total amount payable: UGX 115000.00
 
