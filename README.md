@@ -160,3 +160,45 @@ The average of the scores is 66.00.
 
 
 
+
+
+\## Exercise 7 – Loop Decision
+
+Source: Deitel \& Deitel, C How to Program, 9th Edition, Chapter 4 Section 4.12, Exercise 3.37
+
+What the program does: The program uses a for loop to prompt a user to enter a mark out of 40; it reads it and stores it. The mark is then used in the if/else if/else to decide whether an invalid mark was input and whether the student passed or failed. 
+
+Concepts used: initialization, for loop, printf statement(printf(“”);, scanf statement(scanf(“”)),  escape sequence(\\n for a new line) and string literals, format specifiers(%f for floats), i++ incrementor, a condition(i <= 6), if/else if/else.
+
+How it works: The loop will start with an initial value, which is 1. The body will run when the condition is true, that is (i <=6). It also won’t run when the condition is not met. The loop will run once for each value of i from 1 to 6. For i = 1, it’ll prompt the user to enter the 1st mark; it’ll read it and store it in its variable. Then the entered mark will be evaluated in the if/else if/else statement, where the first check is if the mark is within the range, i.e., (mark <0 || mark > 40). If the condition is false, it’ll proceed to the next condition, and if true, it’ll print out to the user an error message that they input an invalid mark. Then to the condition(mark >= 24); if true, it’ll print out that the student passed and if false, the last else statement will run.
+
+Note: if a user inputs a character(char), the program will produce a continuous loop since invalid input was entered and the scanf will continue running.
+
+Example run: 
+
+Enter mark (/40): 20
+
+Student 1 failed
+
+Enter mark (/40): 65
+
+Invalid mark for Student 2
+
+Enter mark (/40): 40
+
+Student 3 passed
+
+Enter mark (/40): 23.5
+
+Student 4 failed
+
+Enter mark (/40): 24.0
+
+Student 5 passed
+
+Enter mark (/40): 45
+
+Invalid mark for Student 6
+
+
+
