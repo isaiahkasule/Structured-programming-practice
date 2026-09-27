@@ -124,3 +124,39 @@ The sum of the first five squares is 55
 
 
 
+
+
+\## Exercise 6 – Loop Input
+
+Source: Deitel \& Deitel, C How to Program, 9th Edition, Chapter 3, Exercise 3.14(b)
+
+What the program does: The program uses a for loop to prompt a user to enter their scores, prints out each score, updated the sum and at the end of the loop. It calculates the average of the sum of the scores. Then finally, it will print out the average of the numbers. 
+
+Concepts used: initialization, for loop, printf statement(printf(“”);, scanf statement(scanf(“”)),  escape sequence(\\n for a new line) and string literals, format specifiers(%f for floats), i++ incrementor, a condition(i <= 4), sum addition(sum +=)
+
+How it works: The loop will start with an initial value, which is 1. The body will run when the condition is true, that is (i <=4). It'll also not run when the condition is not met. The loop will run once for each value of i from 1 to 4. for i = 1, it'll prompt the user to enter their 1st score, it'll read it and store it in its variable. Then it'll print it out the score and add that value to the sum which was initialized outside the loop. The value of sum will always be zero at each iteration and the old value will be erased if it is declared inside the loop
+
+Note: if a user inputs a character(char), the program will produce a continuous loop since invalid input was entered and the scanf will just continue running.
+
+Example run: 
+
+Enter score1: 65
+
+Score1: 65.00
+
+Enter score2: 87
+
+Score2: 87.00
+
+Enter score3: 87
+
+Score3: 87.00
+
+Enter score4: 25
+
+Score4: 25.00
+
+The average of the scores is 66.00.
+
+
+
