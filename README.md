@@ -17,14 +17,14 @@ How it works: row 1 has a left top corner followed by horizontal lines and then 
 Example run: 
 
 This is a block with a shaded texture.
-'''
+```
 ╔════╗
 ║▓▓▓▓║
 ║▓▓▓▓║
 ║▓▓▓▓║
 ║▓▓▓▓║
 ╚════╝
-'''
+```
 
 
 ## Exercise 2 – Input-Process-Output
@@ -38,13 +38,13 @@ Concepts used: printf statements(printf(""));, scanf statement(scannf("")), esca
 How it works: It’ll ask for a value from the user, read it, and store it in its variable. Then it'll compute the amount for needs by getting the product of income by the percentage of needs(50% or 0.50), which is income * 0.50. The same goes for wants and savings, and all the values are stored in their variables. The program finally prints out the values to the user. 
 
 Example run: 
-'''
+```
 Enter monthly income (UGX): 1000000
 
 Needs: UGX 500000.00
 Wants: UGX 300000.00
 Savings: UGX 200000.00
-'''
+```
 
 ## Exercise 3 – Decisions
 
@@ -57,13 +57,13 @@ Concepts used: if/else statements, printf statements(printf(""));, scanf stateme
 How it works: It’ll ask for a value from the user, read it, and store it in its variable. Then it'll check if the value is greater than or equal to 50; if yes, it'll print out to the user that they have attained the required standard and are promoted to the next class. If false, it'll print out the other printf statement telling them they didn’t attain the required standard and are not promoted. 
 
 Example run: 
-'''
+```
 Enter average score (%): 60
 You've attained the required standard and are promoted to the next class.
 
 Enter average score (%): 45.9
 You have not attained the required standard for promotion.
-'''
+```
 
 ## Exercise 4 – Basic loop
 
@@ -76,9 +76,9 @@ Concepts used: initialisation, for loop, printf statement(printf(“”));, esca
 How it works: The loop will start with an initial value, which is 100. The body(the printf statement) will run when the condition is true, that is (i <=200). It'll also not run when the condition is not met. The loop will run once for each value of i from 100 to 200.
 
 Example run:
-
+```
 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200
-
+```
 
 
 
@@ -94,14 +94,14 @@ Concepts used: initialization, for loop, printf statement(printf(“”));, esca
 How it works: The loop will start with an initial value, which is 1. The body will run when the condition is true, that is (i <=5). It'll also not run when the condition is not met. The loop will run once for each value of i from 1 to 5. For i = 1, it'll calculate the square using the formula i*i, print out the value of the square, and add that value to the total, which was initialized outside the loop. The value of total will always be zero at each iteration, and the old value will be erased if it is declared inside the loop.
 
 Example run:
-'''
+```
 Square1: 1
 Square2: 4
 Square3: 9
 Square4: 16
 Square5: 25
 The sum of the first five squares is 55
-'''
+```
 
 ## Exercise 6 – Loop Input
 
@@ -116,7 +116,7 @@ How it works: The loop will start with an initial value, which is 1. The body wi
 Note: if a user inputs a character(char), the program will produce a continuous loop since invalid input was entered and the scanf will just continue running.
 
 Example run: 
-'''
+```
 Enter score1: 65
 Score1: 65.00
 Enter score2: 87
@@ -125,9 +125,9 @@ Enter score3: 87
 Score3: 87.00
 Enter score4: 25
 Score4: 25.00
-'''
-The average of the scores is 66.00.
 
+The average of the scores is 66.00.
+```
 ## Exercise 7 – Loop Decision
 
 Source: Deitel \& Deitel, C How to Program, 9th Edition, Chapter 4 Section 4.12, Exercise 3.37
@@ -141,7 +141,7 @@ How it works: The loop will start with an initial value, which is 1. The body wi
 Note: if a user inputs a character(char), the program will produce a continuous loop since invalid input was entered and the scanf will continue running.
 
 Example run: 
-'''
+```
 Enter mark (/40): 20
 Student 1 failed
 Enter mark (/40): 65
@@ -154,7 +154,7 @@ Enter mark (/40): 24.0
 Student 5 passed
 Enter mark (/40): 45
 Invalid mark for Student 6
-'''
+```
 
 ## Exercise 8 – Interactive Program
 Source: Deitel & Deitel, C How to Program, 9th Edition. Self-designed program, not based on a single numbered exercise, but demonstrates menu/sentinel-controlled iteration, a broader Chapter 3 concept.
@@ -167,7 +167,7 @@ How it works: The while loop keeps running as long as choice is not 5, showing t
 
 Note: If a user inputs a character instead of a number, the program will loop continuously, since scanf fails to convert it and keeps re-reading the same invalid input.
 Example run:
-'''
+```
 1. Shirts - UGX 20000
 2. Shorts - UGX 15000
 3. Trousers - UGX 25000
@@ -199,4 +199,4 @@ Invalid choice
 Enter choice: 5
 Discount: 10000.00
 Total amount payable: UGX 115000.00
-'''
+```
