@@ -98,3 +98,29 @@ Example run:
 
 
 
+\## Exercise 5 – Loop calculation
+
+Source: Deitel \& Deitel, C How to Program, 9th Edition, Chapter 3, Exercise 3.12
+
+What the program does: The program uses a for loop to accumulate the sum of the first five squares. In each loop iteration, it calculates the square, prints it, and updates the total until the condition is no longer true. Then, finally, it will print out the sum of the numbers.
+
+Concepts used: initialization, for loop, printf statement(printf(“”);, escape sequence(\\n for a new line) and string literals, format specifiers(%d for integers), i++ incrementor, a condition(i <= 5), total addition(total +=)
+
+How it works: The loop will start with an initial value, which is 1. The body will run when the condition is true, that is (i <=5). It'll also not run when the condition is not met. The loop will run once for each value of i from 1 to 5. For i = 1, it'll calculate the square using the formula i\*i, print out the value of the square, and add that value to the total, which was initialized outside the loop. The value of total will always be zero at each iteration, and the old value will be erased if it is declared inside the loop.
+
+Example run:
+
+Square1: 1
+
+Square2: 4
+
+Square3: 9
+
+Square4: 16
+
+Square5: 25
+
+The sum of the first five squares is 55
+
+
+
